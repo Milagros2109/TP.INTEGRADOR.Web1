@@ -5,19 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
     <header>
         <nav class="navegacion">
-            <ul>
+            <ul class="navbar">
                 <li><a href="">Home</a></li>
-                <li><a href="">Categorias</a></li>
+                <li class="prueba">
+                    <button onclick="dropdown(event)" class="dropbutton">Categorias <i class="fa-solid fa-sort-down"></i></i></button>
+                    <!-- <div id="dropdown" class="contenido">
+                        <a href="">Auriculares</a>
+                        <a href="">Relojes</a>
+                        <a href="">Celulares</a>
+                        <a href="">Computadoras</a>
+                    </div> -->
+                </li>
                 <li><a href="">Contacto</a></li>
+            </ul>
+            <ul class="redes">
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
             </ul>
         </nav>
     </header>
+    <div id="carrusel" class="div-carrusel">
+        <button onclick=""><i class="fa-solid fa-arrow-left fa-4x"></i></button>
+        <img src="./img/productos/reloj1.png">
+        <button onclick=""><i class="fa-solid fa-arrow-right fa-4x"></i></button>
+    </div>
     <menu>
         
     </menu>
+    <script src="js/dropdown.js"></script>
 </body>
 </html>

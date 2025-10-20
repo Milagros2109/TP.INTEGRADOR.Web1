@@ -1,7 +1,39 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: monospace;
+    font-size: 17px;
 }
+
+body {
+    height: 100vh;
+    background-image: url(../img/fondos/fondo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008584;
+}
+
+.navbar, .redes {
+    display: flex;
+    align-items: center;;
+}
+
+.dropbutton {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 14px 16px;
+    text-align: center;
+    color: #FBFFCD;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -9,16 +41,48 @@ ul {
     overflow: hidden;
     background-color: #008584;
 }
-ul li {
-    float: left;
-}
-ul li a {
+
+.navbar li a {
     display: block;
     padding: 14px 16px;
     text-decoration: none;
     text-align: center;
     color: #FBFFCD;
 }
-ul li a:hover {
+
+.redes li a {
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #FBFFCD;
+}
+
+ul li a:hover, .dropbutton:hover, .dropbutton:focus {
     background-color: #1C5560;
 }
+
+.div-carrusel {
+    margin: auto;
+    margin-top: 100px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(121, 174, 146, 0.5);
+    border-radius: 30px;
+}
+.div-carrusel img {
+    margin: 100px;
+    height: 500px;
+}
+.div-carrusel button {
+    max-height: 100px;
+    margin: 300px 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 300px;
+    background-color: #008584;
+    color: #FBFFCD;
+}
+
