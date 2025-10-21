@@ -1,0 +1,16 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    gap: 10px;
+}
+item{
+    border: 1px solid black;
+
+}
+#itembutton{
+    text-align: center;
+    align-content: center;
+
+}
