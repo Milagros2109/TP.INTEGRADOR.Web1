@@ -10,9 +10,8 @@ body {
     height: 100vh;
     background-image: url(../img/fondos/fondo4.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
+
 .navegacion {
     display: flex;
     justify-content: space-between;
@@ -58,21 +57,98 @@ ul {
     color: #FBFFCD;
 }
 
-ul li a:hover, .dropbutton:hover, .dropbutton:focus {
-    background-color: #1C5560;
+.contenido {
+    position: absolute;
+    display: none;
+    background-color:#008584;
+    opacity: 75%;
 }
 
+.navbar li:hover .contenido {
+    display: block;
+}
 
+#carrusel-botones {
+    display: flex;
+}
+
+.div-carrusel {
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    height: 90%;
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color:rgba(0, 133, 132, 0.5);
+    border-radius: 30px;
+}
+.div-carrusel #img1 {
+    display: none;
+    width: 75%;
+    height: 75%;
+    margin: 100px;
+}
+
+.div-carrusel #img2 {
+    width: 85%;
+    height: 85%;
+    margin: 100px;
+}
+
+.div-carrusel #img3 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 100px;
+}
+
+#carrusel-botones button {
+    max-height: 100px;
+    margin: 300px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 300px;
+    background-color: #008584;
+    color: #FBFFCD;
+}
+
+#ofertas {
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 40px;
+    padding: 10px;
+    background-color: #008584;
+    border-radius: 15px;
+}
+
+#ofertas h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    font-size: 30px;
+    color: #FBFFCD;
+}
+
+ul li a:hover, .dropbutton:hover, .dropbutton:focus, #carrusel-botones button:hover, #carrusel-botones button:focus {
+    background-color: #1C5560;
+}
 
 /*Formulario */
 
 
 .contenedor{
-max-width: 120rem;
-width: 90%;
-margin: 0 auto;
-
-
+    position: absolute;
+    display: none;
+    background-color:#008584;
+    opacity: 75%;
 }
 
 .Formulario {
@@ -101,6 +177,7 @@ margin: 0 auto;
     text-align: center;
     padding-right: 1rem;
     margin-bottom: 5px;
+    font-size: 24px;
 }
 .imput__field {
     
@@ -108,12 +185,13 @@ margin: 0 auto;
     flex:1;
     border: 1px solid gray;
     
+    
 
 }
 .campo__field--textarea{
     background: transparent;
     height: 10rem;
-    width: 90%;
+    width: 100%;
     flex: 1;
 }
 
