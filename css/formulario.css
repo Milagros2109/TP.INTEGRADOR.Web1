@@ -1,4 +1,132 @@
-form{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../img/fondos/fondo4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008584;
+}
+
+.navbar, .redes {
+    display: flex;
+    align-items: center;;
+}
+
+.dropbutton {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 14px 16px;
+    text-align: center;
+    color: #FBFFCD;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008584;
+}
+
+.navbar li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    color: #FBFFCD;
+}
+
+.redes li a {
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #FBFFCD;
+}
+
+ul li a:hover, .dropbutton:hover, .dropbutton:focus {
+    background-color: #1C5560;
+}
+
+
+
+/*Formulario */
+
+
+.contenedor{
+max-width: 120rem;
+width: 90%;
+margin: 0 auto;
+
+
+}
+
+.Formulario {
+    width: 40%;              /* tamaño */
+    margin: 50px auto;         /* centra */
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* un poco transparente */
+    backdrop-filter: blur(10px);           /* efecto borroso */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    }
+
+.campo {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    height: 40%;
+    font-weight: bold;
+    height: auto;
 }
+.campo__label{
+    flex: 0 0 1rem; 
+    text-align: center;
+    padding-right: 1rem;
+    margin-bottom: 5px;
+}
+.imput__field {
+    
+    background: transparent;
+    flex:1;
+    border: 1px solid gray;
+    
+
+}
+.campo__field--textarea{
+    background: transparent;
+    height: 10rem;
+    width: 90%;
+    flex: 1;
+}
+
+.boton--primario{
+    display: flex;
+    margin: 20px auto; /* auto a los lados lo centra */
+    background-color: #008584;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-bottom: 2px;
+    cursor: pointer;
+}
+
+

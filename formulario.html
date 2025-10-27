@@ -8,33 +8,94 @@
 
 </head>
 <body>
- 
-  <form>
-   <h1>Formulario de Contacto </h1>
 
-  <label for="nombre y apellido"> Nombre y apellido</label>
-  <input type="text"> 
+    <header>
+        <nav class="navegacion">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li class="prueba">
+                    <button onclick="dropdown(event)" class="dropbutton">Categorias <i class="fa-solid fa-sort-down"></i></i></button>
+                    <!-- <div id="dropdown" class="contenido">
+                        <a href="">Auriculares</a>
+                        <a href="">Relojes</a>
+                        <a href="">Celulares</a>
+                        <a href="">Computadoras</a>
+                    </div> -->
+                </li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <ul class="redes">
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <label for="Gmail">Gmail:</label>
-<input type="gmail">
+    <main class="contenedor">
+    <h3 class="center-text"> Contacto </h3>
+    </main>    
 
-<label for="telefono">Telefono:</label>
-<input type="number">
+<form class= "Formulario">
+    
+<div class="campo">
+    <label class="campo__label"for="Nombre"> Nombre </label>
+    <input 
+    class="imput__field"
+    name="ValidarNombre"
+    type="text" 
+    placeholder="Tu nombre" 
+    id="Nombre"
+    >   
+</div>
 
-<select>
+<div class = "campo" >
+    <label class="campo__label" for="email">Gmail:</label>
+    <input 
+    class="imput__field"
+    name="email"
+    type="email" 
+    placeholder="Tu E-mail" 
+    id="email"
+    >
+</div>
+
+<div class= "campo">
+    <label class="campo__label" for="telefono">Telefono:</label>
+    <input 
+    class="imput__field"
+    name= "telefono"
+    type="tel"
+    placeholder="Tu Telefono"
+    id="telefono"
+    >
+</div>
+
+<div class="campo">
+    <label class="campo__label" for="asunto">Asunto:</label>
+    <select class="imput__field"name="asunto" id="asunto" >
     <option value="Asunto"> Seleccione el asunto</option>
     <option value="Consulta">Consulta</option>
     <option value="Reclamo">Reclamo</option>
     <option value="Sugerencia">Sugerencia</option>
     
 </select>
-<textarea>Mensaje</textarea>
-
-<div class="">
-    <button type ="submit"> Enviar Formulario</button>
 </div>
+    <div class="campo">
+    <label class="campo__label" for="mensaje">Mensaje*</label>
+    <textarea 
+    class="campo__field campo__field--textarea"
+    id="mensaje"></textarea>
+    </div>
 
 
-      </form>
+    <div class="campo">
+    <input type="submit" value="Enviar" class="boton--primario">
+    </div>
+
+
+
+
+</form>
 </body>
 </html>
