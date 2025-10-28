@@ -24,15 +24,6 @@ body {
     align-items: center;;
 }
 
-.dropbutton {
-    display: block;
-    background-color: transparent;
-    border: none;
-    padding: 14px 16px;
-    text-align: center;
-    color: #FBFFCD;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -68,78 +59,10 @@ ul {
     display: block;
 }
 
-#carrusel-botones {
-    display: flex;
-}
-
-.div-carrusel {
-    margin: auto;
-    margin-top: 50px;
-    width: 90%;
-    height: 90%;
-    max-width: 500px;
-    max-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    background-color:rgba(0, 133, 132, 0.5);
-    border-radius: 30px;
-}
-.div-carrusel #img1 {
-    display: none;
-    width: 75%;
-    height: 75%;
-    margin: 100px;
-}
-
-.div-carrusel #img2 {
-    width: 85%;
-    height: 85%;
-    margin: 100px;
-}
-
-.div-carrusel #img3 {
-    display: none;
-    width: 100%;
-    height: 100%;
-    margin: 100px;
-}
-
-#carrusel-botones button {
-    max-height: 100px;
-    margin: 300px auto;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 300px;
-    background-color: #008584;
-    color: #FBFFCD;
-}
-
-#ofertas {
-    margin: auto;
-    margin-top: 50px;
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
-    max-height: 40px;
-    padding: 10px;
-    background-color: #008584;
-    border-radius: 15px;
-}
-
-#ofertas h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    font-size: 30px;
-    color: #FBFFCD;
-}
-
-ul li a:hover, .dropbutton:hover, .dropbutton:focus, #carrusel-botones button:hover, #carrusel-botones button:focus {
+ul li a:hover {
     background-color: #1C5560;
 }
+
 
 /*Formulario */
 
@@ -152,59 +75,111 @@ ul li a:hover, .dropbutton:hover, .dropbutton:focus, #carrusel-botones button:ho
 }
 
 .Formulario {
-    width: 40%;              /* tamaño */
+    width: 30%;              /* tamaño */
     margin: 50px auto;         /* centra */
     padding: 25px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2); /* un poco transparente */
-    backdrop-filter: blur(10px);           /* efecto borroso */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 3px solid #008584;
+    box-shadow: 5px 5px 0 rgba(0, 133, 132, 0.5);
+    border-radius: 25px;
+    background: #FBFFCD; /* un poco transparente */
     overflow: hidden;
+    color: #1C5560;
     }
 
 .campo {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
-    gap: 2rem;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
     height: 40%;
     font-weight: bold;
     height: auto;
 }
-.campo__label{
-    flex: 0 0 1rem; 
+
+.campo-label{
     text-align: center;
     padding-right: 1rem;
-    margin-bottom: 5px;
     font-size: 24px;
 }
-.imput__field {
-    
-    background: transparent;
-    flex:1;
-    border: 1px solid gray;
-    
-    
 
+.input-field {
+    padding: 5px;
+    background: #FBFFCD;
+    border: 2px solid #008584;
+    box-shadow: 3px 3px 0 rgba(0, 133, 132, 0.5);
+    border-radius: 5px;
+    color: #1C5560;
 }
-.campo__field--textarea{
-    background: transparent;
+
+.campo-field-textarea{
+    padding: 5px;
+    background: #FBFFCD;
+    border: 2px solid #008584;
+    box-shadow: 3px 3px 0 rgba(0, 133, 132, 0.5);
+    border-radius: 5px;
+    resize: vertical;
     height: 10rem;
     width: 100%;
-    flex: 1;
+    color: #1C5560;
 }
 
-.boton--primario{
+.campo-field-textarea:focus, .imput__field:focus {
+    outline: none;
+    border-color: #008584;
+}
+
+.input-field::placeholder, .option-default {
+    color: #1C5560;
+    opacity: 0.7;
+}
+
+.input-field:focus, .campo-field-textarea:focus {
+    outline: none;
+    border: 2px solid #008584;
+}
+
+.boton-primario{
     display: flex;
     margin: 20px auto; /* auto a los lados lo centra */
+    padding: 15px 10%;
     background-color: #008584;
     color: white;
     border: none;
-    padding: 15px 20px;
     border-radius: 8px;
     border-bottom: 2px;
     cursor: pointer;
 }
 
+#informacion-subida {
+    display: none;
+    width: 30%;             
+    margin: 50px auto;         
+    padding: 25px;
+    border: 3px solid #008584;
+    box-shadow: 5px 5px 0 rgba(0, 133, 132, 0.5);
+    border-radius: 25px;
+    background: #FBFFCD; 
+    overflow: hidden;
+    color: #1C5560;
+}
 
+.ingreso-erroneo {
+    display: none;
+    color: #e74c3c;
+}
+
+footer {
+    display: flex;
+    margin: 50px 0;
+    padding: 20px;
+    background-color:#008584;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+footer span {
+    margin: auto;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    color: #FBFFCD;
+}

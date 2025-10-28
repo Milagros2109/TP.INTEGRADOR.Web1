@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
     <link rel="stylesheet" type="text/css" href="css/formulario.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes= "32x32" href="./img/logo/logo.png">
 </head>
 <body>
 
     <header>
-                <nav class="navegacion">
+        <nav class="navegacion">
             <ul class="navbar">
-                <li><a href="">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="menu-desplegable">
                     <a href="">Categorias <i class="fa-solid fa-sort-down"></i></i></a>
                     <div id="dropdown" class="contenido">
@@ -36,66 +38,56 @@
     <h3> Contacto </h3>
     </main>    
 
-<form class= "Formulario">
+<form class="Formulario" name="formulario" novalidate onsubmit="return validarDatos()">
     
 <div class="campo">
-    <label class="campo__label"for="Nombre"> Nombre </label>
-    <input 
-    class="imput__field"
-    name="ValidarNombre"
-    type="text" 
-    placeholder="Tu nombre" 
-    id="Nombre"
-    >   
+    <label class="campo-label"for="Nombre">Nombre:</label>
+    <input class="input-field" name="nombre" type="text" placeholder="Ingrese su nombre" id="Nombre">   
+    <label class="ingreso-erroneo">*Ingrese un nombre válido</label>
 </div>
 
 <div class = "campo" >
-    <label class="campo__label" for="email">Gmail:</label>
-    <input 
-    class="imput__field"
-    name="email"
-    type="email" 
-    placeholder="Tu E-mail" 
-    id="email"
-    >
+    <label class="campo-label" for="email">Email:</label>
+    <input class="input-field" name="email" type="email"  placeholder="ejemplo@email.com"  id="email">
+    <label class="ingreso-erroneo">*Ingrese un email válido</label>
 </div>
 
 <div class= "campo">
-    <label class="campo__label" for="telefono">Telefono:</label>
-    <input 
-    class="imput__field"
-    name= "telefono"
-    type="tel"
-    placeholder="Tu Telefono"
-    id="telefono"
-    >
+    <label class="campo-label" for="telefono">Teléfono:</label>
+    <input class="input-field" name= "telefono" type="text" placeholder="Ingrese su número de teléfono" id="telefono">
+    <label class="ingreso-erroneo">*Ingrese un teléfono válido</label>
 </div>
 
 <div class="campo">
-    <label class="campo__label" for="asunto">Asunto:</label>
-    <select class="imput__field"name="asunto" id="asunto" >
-    <option value="Asunto"> Seleccione el asunto</option>
-    <option value="Consulta">Consulta</option>
-    <option value="Reclamo">Reclamo</option>
-    <option value="Sugerencia">Sugerencia</option>
-    
-</select>
+    <label class="campo-label" for="asunto">Asunto:</label>
+    <select class="input-field"name="asunto" id="asunto" >
+        <option value="Asunto" class="option-default"> Seleccione el asunto</option>
+        <option value="Consulta">Consulta</option>
+        <option value="Reclamo">Reclamo</option>
+        <option value="Sugerencia">Sugerencia</option>
+    </select>
 </div>
-    <div class="campo">
-    <label class="campo__label" for="mensaje">Mensaje*</label>
-    <textarea 
-    class="campo__field campo__field--textarea"
-    id="mensaje"></textarea>
-    </div>
 
+<div class="campo">
+    <label class="campo-label" for="mensaje">Mensaje:</label>
+    <textarea class="campo-field-textarea" id="mensaje" name="mensaje"></textarea>
+</div>
 
-    <div class="campo">
-    <input type="submit" value="Enviar" class="boton--primario">
-    </div>
-
-
-
+<div class="campo">
+    <input type="submit" value="Enviar" class="boton-primario">
+</div>
 
 </form>
+
+<div id="informacion-subida">
+
+</div>
+
+<footer>
+    <span>Trabajo Práctico Integrador</span>
+    <span>Hecho por: Alfaro Milagros y Urbani José</span>
+</footer>
+
+<script src="js/formulario.js"></script>
 </body>
 </html>

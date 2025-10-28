@@ -23,15 +23,6 @@ body {
     align-items: center;;
 }
 
-.dropbutton {
-    display: block;
-    background-color: transparent;
-    border: none;
-    padding: 14px 16px;
-    text-align: center;
-    color: #FBFFCD;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -115,7 +106,7 @@ ul {
     color: #FBFFCD;
 }
 
-#ofertas {
+.ofertas {
     margin: auto;
     margin-top: 50px;
     width: 100%;
@@ -127,7 +118,7 @@ ul {
     border-radius: 15px;
 }
 
-#ofertas h2 {
+.ofertas h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,11 +127,12 @@ ul {
     color: #FBFFCD;
 }
 
-ul li a:hover, .dropbutton:hover, .dropbutton:focus, #carrusel-botones button:hover, #carrusel-botones button:focus {
+ul li a:hover, #carrusel-botones button:hover {
     background-color: #1C5560;
 }
 
 #contenedor {
+    margin: 100px;
     display: flex;
     justify-content: center;
 }
@@ -187,7 +179,8 @@ footer {
 }
 footer span {
     margin: auto;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: smaller;
+    color: #FBFFCD;
 }
 
