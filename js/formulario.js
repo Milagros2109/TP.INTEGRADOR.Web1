@@ -12,7 +12,7 @@ function validarDatos() {
     const inputMensaje = document.getElementById('mensaje');
     let enviar = true;
     console.log(inputNombre);
-    if (!regNombre.test(inputNombre.value)) {
+    if (!regNombre.test(inputNombre.value.trim())) {
         inputNombre.style.borderColor = '#e74c3c';
         inputNombre.style.boxShadow = '3px 3px 0 rgba(231, 76, 60, 0.5)';
         error[0].style.display = 'block';
@@ -22,7 +22,7 @@ function validarDatos() {
         inputNombre.style.boxShadow = '3px 3px 0 rgba(0, 133, 132, 0.5)';
         error[0].style.display = 'none';
     }
-    if (!regEmail.test(inputEmail.value)) {
+    if (!regEmail.test(inputEmail.value.trim())) {
         inputEmail.style.borderColor = '#e74c3c';
         inputEmail.style.boxShadow = '3px 3px 0 rgba(231, 76, 60, 0.5)';
         error[1].style.display = 'block';
@@ -33,7 +33,7 @@ function validarDatos() {
         error[1].style.display = 'none';
     }
     
-    if (!regTelefono.test(inputTelefono.value)) {
+    if (!regTelefono.test(inputTelefono.value.trim())) {
         inputTelefono.style.borderColor = '#e74c3c';
         inputTelefono.style.boxShadow = '3px 3px 0 rgba(231, 76, 60, 0.5)';
         error[2].style.display = 'block';
@@ -45,7 +45,11 @@ function validarDatos() {
     }
 
     if (enviar) {
-        datosContacto(inputNombre.value, inputEmail.value, inputTelefono.value, inputAsunto.value, inputMensaje.value)
+        if (inputMensaje.value === '') {
+            datosContacto(inputNombre.value, inputEmail.value, inputTelefono.value, inputAsunto.value, 'No se envió ningun mensaje')
+        } else {
+            datosContacto(inputNombre.value, inputEmail.value, inputTelefono.value, inputAsunto.value, inputMensaje.value)
+        }
     }
     return false;
 }
@@ -55,11 +59,11 @@ function datosContacto(nombre, email, telefono, asunto, mensaje) {
     divDatos.style.display = 'block';
     divDatos.innerHTML += `
         <div class=info-subida>
-            <span>${nombre}</span>
-            <span>${email}</span>
-            <span>${telefono}</span>
-            <span>${asunto}</span>
-            <span>${mensaje}</span>
+            <span>Nombre: ${nombre}</span>
+            <span>Email: ${email}</span>
+            <span>Telefono: ${telefono}</span>
+            <span>Asunto: ${asunto}</span>
+            <span>Mensaje: ${mensaje}</span>
         </div>
     `
 }

@@ -67,11 +67,24 @@ ul li a:hover {
 /*Formulario */
 
 
-.contenedor{
-    position: absolute;
-    display: none;
-    background-color:#008584;
-    opacity: 75%;
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 40px;
+    padding: 10px;
+    background-color: #008584;
+    border-radius: 15px;
+}
+
+.contenedor h2 {
+    font-size: 30px;
+    color: #FBFFCD;
 }
 
 .Formulario {
@@ -150,8 +163,7 @@ ul li a:hover {
     cursor: pointer;
 }
 
-#informacion-subida {
-    display: none;
+.info-subida {
     width: 30%;             
     margin: 50px auto;         
     padding: 25px;
@@ -161,6 +173,11 @@ ul li a:hover {
     background: #FBFFCD; 
     overflow: hidden;
     color: #1C5560;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .ingreso-erroneo {

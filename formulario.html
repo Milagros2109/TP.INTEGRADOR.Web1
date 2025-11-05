@@ -16,15 +16,15 @@
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li class="menu-desplegable">
-                    <a href="">Categorias <i class="fa-solid fa-sort-down"></i></i></a>
+                    <a href="categoria.html">Categorias <i class="fa-solid fa-sort-down"></i></i></a>
                     <div id="dropdown" class="contenido">
-                        <a href="">Auriculares</a>
-                        <a href="">Relojes</a>
-                        <a href="">Celulares</a>
-                        <a href="">Computadoras</a>
+                        <a href="categoria.html#Celulares">Celulares</a>
+                        <a href="categoria.html#Auriculares">Auriculares</a>
+                        <a href="categoria.html#Relojes">Relojes</a>
+                        <a href="categoria.html#Computadoras">Computadoras</a>
                     </div>
                 </li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
             </ul>
             <ul class="redes">
                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
@@ -35,7 +35,7 @@
     </header>
 
     <main class="contenedor">
-    <h3> Contacto </h3>
+    <h2> Contacto </h2>
     </main>    
 
 <form class="Formulario" name="formulario" novalidate onsubmit="return validarDatos()">
@@ -60,11 +60,11 @@
 
 <div class="campo">
     <label class="campo-label" for="asunto">Asunto:</label>
-    <select class="input-field"name="asunto" id="asunto" >
-        <option value="Asunto" class="option-default"> Seleccione el asunto</option>
+    <select class="input-field"name="asunto" id="asunto">
         <option value="Consulta">Consulta</option>
         <option value="Reclamo">Reclamo</option>
         <option value="Sugerencia">Sugerencia</option>
+        <option value="Otro">Otro</option>
     </select>
 </div>
 

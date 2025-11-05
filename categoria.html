@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
     <link rel="stylesheet" type="text/css" href="css/categoria.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes= "32x32" href="./img/logo/logo.png">
 </head>
 <body>
     <header>
         <nav class="navegacion">
             <ul class="navbar">
-                <li><a href="">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="menu-desplegable">
-                    <a href="">Categorias <i class="fa-solid fa-sort-down"></i></i></a>
+                    <a href="categoria.html">Categorias <i class="fa-solid fa-sort-down"></i></i></a>
                     <div id="dropdown" class="contenido">
-                        <a href="">Auriculares</a>
-                        <a href="">Relojes</a>
-                        <a href="">Celulares</a>
-                        <a href="">Computadoras</a>
+                        <a href="#Celulares">Celulares</a>
+                        <a href="#Auriculares">Auriculares</a>
+                        <a href="#Relojes">Relojes</a>
+                        <a href="#Computadoras">Computadoras</a>
                     </div>
                 </li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="formulario.html">Contacto</a></li>
             </ul>
             <ul class="redes">
                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
@@ -30,86 +32,162 @@
             </ul>
         </nav>
     </header>
-
-    <h2 class="texto-producto">Productos</h2>
-
-    <div id="contenedor">
-        <div id="contenido1" class="content">
-            <img src="./img/productos/Celu3.png" alt="" id="cont1" class="cont-img">
-            <a href="" class="producto">Iphone 11 (128GB) VIOLETA</a>
-            <span class="precio">$899.999</span>
-            <button>Agregar al carrito</button>
+    <div class="carteles">
+        <h2>Productos</h2>
+    </div> 
+    <div class="secciones" id="Celulares">
+        <h2>Celulares</h2>
     </div>
-        <div id="contenido2" class="content">
-            <img src="./img/productos/Celu2_azul.png" alt="" id="cont1" class="cont-img">
-            <a href="" class="producto">Iphone 11 (128GB) CELESTE </a>
-            <span class="precio">$899.999</span>
-            <button>Agregar al carrito</button>
-
+    <div class="tipo-seccion">    
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/Celu3.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Celulares" class="producto">Iphone 11 (128GB) VIOLETA</a>
+                <span class="precio">$899.999</span>
+            </div>
         </div>
-        <div id="contenido2" class="content">
-            <img src="./img/productos/iphone 12 pro max .png" alt="" id="cont1" class="cont-img">
-            <a href="" class="producto">Iphone 12 (128GB) BLANCO </a>
-            <span class="precio">$899.999</span>
-            <button>Agregar al carrito</button>
-            
-
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/Celu2_azul.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Celulares" class="producto">Iphone 11 (128GB) CELESTE </a>
+                <span class="precio">$899.999</span>
+            </div>
         </div>
-        <div id="contenido2" class="content">
-            <img src="./img/productos/iphone 12.png" alt="" id="cont1" class="cont-img">
-            <a href="" class="producto">Iphone 12 (128GB) AZUL </a>
-            <span class="precio">$899.999</span>
-            <button>Agregar al carrito</button>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/iphone 12 pro max .png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Celulares" class="producto">Iphone 12 (128GB) BLANCO </a>
+                <span class="precio">$899.999</span>
+            </div>
         </div>
-
-
-        <div id="contenido3" class="content">
-            <img src="./img/productos/auris2.png" alt="" id="cont2" class="cont-img">
-            <a href="" class="producto">Auriculares Sennheisers</a>
-            <span class="precio">$98.999</span>
-            <button>Agregar al carrito</button>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/iphone 12.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Celulares" class="producto">Iphone 12 (128GB) AZUL </a>
+                <span class="precio">$899.999</span>
+            </div>
         </div>
-        <div id="contenido" class="content">
-            <img src="./img/productos/auris3.png" alt="" id="cont3" class="cont-img">
-            <a href="" class="producto">Auriculares inalámbricos Samsung</a>
-            <span class="precio">$37.999</span>
-            <button>Agregar al carrito</button>
+    </div>
+    <div class="secciones" id="Auriculares">
+        <h2>Auriculares</h2>
+    </div>
+    <div class="tipo-seccion">
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/auris2.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Auriculares" class="producto">Auriculares Sennheisers</a>
+                <span class="precio">$98.999</span>
+            </div>
         </div>
-        <div id="contenido" class="content">
-            <img src="./img/productos/auris1.png" alt="" id="cont3" class="cont-img">
-            <a href="" class="producto">Auriculares inalámbricos Samsung</a>
-            <span class="precio">$37.999</span>
-            <button>Agregar al carrito</button>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/auris3.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Auriculares" class="producto">Auriculares inalámbricos Samsung</a>
+                <span class="precio">$37.999</span>
+            </div>
         </div>
-        <div id="contenido" class="content">
-            <img src="./img/productos/auris4.png" alt="" id="cont3" class="cont-img">
-            <a href="" class="producto">Auriculares inalámbricos Samsung</a>
-            <span class="precio">$37.999</span>
-            <button>Agregar al carrito</button>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/auris1.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Auriculares" class="producto">Auriculares inalámbricos Samsung</a>
+                <span class="precio">$37.999</span>
+            </div>
         </div>
-        <div id="contenido" class="content">
-            <img src="./img/productos/reloj1.png" alt="" id="cont4" class="cont-img">
-            <a href="" class="producto">Reloj Inteligente Imilab</a>
-            <span class="precio">$52.999</span>
-            <button>Agregar al carrito</button>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/auris4.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Auriculares" class="producto">Auriculares inalámbricos Samsung</a>
+                <span class="precio">$37.999</span>
+            </div>
         </div>
-        <div id="contenido" class="content">
-            <img src="./img/productos/reloj2.png" alt="" id="cont4" class="cont-img">
-            <a href="" class="producto">Reloj Inteligente Imilab</a>
-            <span class="precio">$52.999</span>
-            <button>Agregar al carrito</button>
+    </div>
+    <div class="secciones" id="Relojes">
+        <h2>Relojes</h2>
+    </div>
+    <div class="tipo-seccion">
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/reloj1.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Relojes" class="producto">Reloj Inteligente Imilab</a>
+                <span class="precio">$52.999</span>
+            </div>
         </div>
-        <div id="contenido" class="content">
-            <img src="./img/productos/reloj4.png" alt="" id="cont4" class="cont-img">
-            <a href="" class="producto">Reloj Inteligente Imilab</a>
-            <span class="precio">$52.999</span>
-            <button>Agregar al carrito</button>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/reloj2.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Relojes" class="producto">Reloj Inteligente Imilab</a>
+                <span class="precio">$52.999</span>
+            </div>
         </div>
-        <div id="contenido" class="content">
-            <img src="./img/productos/reloj5.png" alt="" id="cont4" class="cont-img">
-            <a href="" class="producto">Reloj Inteligente Imilab</a>
-            <span class="precio">$52.999</span>
-            <button>Agregar al carrito</button>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/reloj4.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Relojes" class="producto">Reloj Inteligente Imilab</a>
+                <span class="precio">$52.999</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/reloj5.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Relojes" class="producto">Reloj Inteligente Imilab</a>
+                <span class="precio">$52.999</span>
+            </div>
+        </div>
+    </div>
+    <div class="secciones" id="Computadoras">
+        <h2>Computadoras</h2>
+    </div>
+    <div class="tipo-seccion">
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/Compu1.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Computadoras" class="producto">MacBook Pro</a>
+                <span class="precio">$2.499.999</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/Compu2.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Computadoras" class="producto">Monitor Apple 1</a>
+                <span class="precio">$999.999</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="imagenes">
+                <img src="./img/productos/Compu3.png" alt="" class="cont-img">
+            </div>
+            <div class="descripcion">
+                <a href="#Computadoras" class="producto">Monitor Apple 2</a>
+                <span class="precio">$849.999</span>
+            </div>
         </div>
     </div>
             

@@ -6,6 +6,11 @@
     font-size: 17px;
 }
 
+html {
+/* Scroll suave cuando se clickea una categoría*/
+  scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     background-image: url(../img/fondos/fondo4.jpg);
@@ -22,15 +27,6 @@ body {
 .navbar, .redes {
     display: flex;
     align-items: center;;
-}
-
-.dropbutton {
-    display: block;
-    background-color: transparent;
-    border: none;
-    padding: 14px 16px;
-    text-align: center;
-    color: #FBFFCD;
 }
 
 ul {
@@ -68,55 +64,62 @@ ul {
     display: block;
 }
 
-#carrusel-botones {
+ul li a:hover {
+    background-color: #1C5560;
+}
+
+/*Catalogo*/
+
+.texto-producto{
+    text-align: center;
+    font-size: 4rem;
+
+}
+.secciones {
+    margin: 100px 0;
+    padding: 20px;
+    width: auto;
+    background-color: rgba(0, 133, 132, 0.3);
+    border-top: solid #008584;
+    border-bottom: solid #008584;
+    text-align: center;
+    color:#1C5560;
+}
+.content {
     display: flex;
-}
-
-.div-carrusel {
-    margin: auto;
-    margin-top: 50px;
-    width: 90%;
-    height: 90%;
-    max-width: 500px;
-    max-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    background-color:rgba(0, 133, 132, 0.5);
-    border-radius: 30px;
-}
-.div-carrusel #img1 {
-    display: none;
-    width: 75%;
-    height: 75%;
-    margin: 100px;
-}
-
-.div-carrusel #img2 {
-    width: 85%;
-    height: 85%;
-    margin: 100px;
-}
-
-.div-carrusel #img3 {
-    display: none;
-    width: 100%;
-    height: 100%;
-    margin: 100px;
-}
-
-#carrusel-botones button {
-    max-height: 100px;
-    margin: 300px auto;
     padding: 10px 20px;
-    border: none;
-    border-radius: 300px;
-    background-color: #008584;
-    color: #FBFFCD;
+    height: 250px;
+    max-height: 10%;
+    width: 20%;
+    max-width: 20%;
+    background-color: rgba(0, 133, 132, 0.3);
+    border: solid;
+    border-color: #008584;
+    border-radius: 25px;
 }
 
-#ofertas {
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center     ;
+    padding: 10px;
+}
+
+.tipo-seccion {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tipo-seccion h2 {
+    font-size: 30px;
+    color: #008584;
+}
+
+.carteles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     margin-top: 50px;
     width: 100%;
@@ -128,42 +131,10 @@ ul {
     border-radius: 15px;
 }
 
-#ofertas h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+.carteles h2 {
     font-size: 30px;
     color: #FBFFCD;
 }
-
-ul li a:hover, .dropbutton:hover, .dropbutton:focus, #carrusel-botones button:hover, #carrusel-botones button:focus {
-    background-color: #1C5560;
-}
-/*Catalogo*/
-.texto-producto{
-    text-align: center;
-    font-size: 4rem;
-
-}
-#contenedor {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.content {
-    flex: 0 0 calc(25% - 1rem);
-    padding: 10px;
-
-
-    /*diseño*/
-    background-color: rgba(0, 133, 132, 0.3);
-    border: solid;
-    border-color: #008584;
-    border-radius: 25px;
-}
-
-
 
 .cont-img {
     height: auto;
