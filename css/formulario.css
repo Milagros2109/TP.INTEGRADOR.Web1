@@ -197,6 +197,11 @@ footer {
 footer span {
     margin: auto;
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: smaller;
+    font-size: 1em;
     color: #FBFFCD;
+}
+@media screen and (max-width:767px) {
+    .Formulario {
+        width: 80%;
+    }
 }

@@ -149,7 +149,7 @@ ul li a:hover {
 }
 .content span {
     margin: auto;
-    font-size: 20px;
+    font-size: 1em;
 }
 footer {
     display: flex;
@@ -162,6 +162,26 @@ footer {
 }
 footer span {
     margin: auto;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: smaller;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #FBFFCD;
+}
+
+@media screen and (max-width:767px) {
+    .tipo-seccion {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .content {
+        width: 80%;
+        height: 100px;
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .cont-img {
+        height: 100%;
+        width: 100%;
+    }
 }
