@@ -76,23 +76,10 @@ ul {
     background-color:rgba(0, 133, 132, 0.5);
     border-radius: 30px;
 }
+
 .div-carrusel #img1 {
-    display: none;
     width: 75%;
     height: 75%;
-    margin: 100px;
-}
-
-.div-carrusel #img2 {
-    width: 85%;
-    height: 85%;
-    margin: 100px;
-}
-
-.div-carrusel #img3 {
-    display: none;
-    width: 100%;
-    height: 100%;
     margin: 100px;
 }
 
@@ -227,4 +214,4 @@ footer span {
     .navbar li a {
         font-size: 0.7em;
     }
-
+}
